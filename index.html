@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Love Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<h2>Love Calculator</h2>
+		</div>
+		<div onsubmit="return true">
+			<input type="text" id="name" name="" class="inputbox" placeholder="Enter Your Name">
+			<input type="text" name="" id="lname" class="inputbox" placeholder="Enter Your love Name">
+			<button class="mainbtn" type="submit" onsubmit="reset" onclick="lovecal();">Click to calculate</button>
+			<hr>
+			<h3 class="output">Your Love Percentage is <span class="percent">0%</span></h3>
+			<br>
+			<h3 class="mylink">Portfolio : <a href="https://freelancershaon.ml" class="mylink2">freelancershaon</a></h3>
+			<h3 class="mylink">Front End Web Developer : <a href="https://freelancershaon.ml" class="mylink2">Fiverr.com</a></h3>
+			<h3 class="mylink">Visit Now : <a href="https://freelancershaon.ml" class="mylink2">Fiverr.com</a></h3>
+ 		</div>
+	</div>
+
+<script type="text/javascript">
+	
+	function lovecal(argument) {
+		// body...
+
+		var name = document.querySelector("#name").value;
+		var lname = document.querySelector("#lname").value;
+
+		if (name=="") {
+			alert("Please Enter Your Name")
+		}else if (name.length<3) {
+			alert("Please Enter atlist 3 word name");
+		}else if (!isNaN(name)) {
+			alert("Number Not a name")
+		}else if (lname=="") {
+			alert("Please Enter Your Love Name")
+		}else if (lname.length<=2) {
+			alert("Please Enter atlist 3 word of your Love name");
+		}else if (!isNaN(lname)) {
+			alert("Number Not a name")
+		}else{
+			var lovePer = Math.random()*101;
+		var lovePer1 = Math.floor(lovePer);
+
+		
+
+		document.querySelector(".percent").innerHTML=lovePer1+"%";
+		}
+	}
+</script>
+</body>
+</html>

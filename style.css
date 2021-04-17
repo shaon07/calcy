@@ -1,0 +1,85 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body
+{
+	background: url(pngtree-colorful-triangle-blue-purple-banner-background-linescolorful-triangleblue-violet-shadingdynamic-image_80173.jpg) no-repeat;
+	background-size: cover;
+	height: 100vh;
+	padding: 2%;
+}
+.container{
+	width: 50%;
+	height: 80vh;
+	margin: auto;
+	background: rgba(0,0,0,0.40);
+	text-align: center;
+	margin: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	padding: 3%;
+}
+.row
+{
+	padding: 1%;
+	color:white;
+	width: 100%;
+	background:red;
+	
+}
+.inputbox
+{
+	padding: 2% 4%;
+    margin: 2%;
+    border: 2px solid red;
+    border-radius: 10px;
+    outline: none;
+}
+.mainbtn
+{
+	display: block;
+    margin: 20px auto;
+    padding: 2%;
+    /* border-radius: 10px; */
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+    outline: none;
+    transition: .5s;
+}
+.mainbtn:hover
+{
+	background:white;
+	color: black;
+}
+h3.output {
+    border: 1px solid red;
+    display: inline-block;
+    margin: 2% 1%;
+    padding: 2% 10%;
+    color: white;
+    border-radius: 10px;
+}
+.mylink {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    margin: 2%;
+}
+a.mylink2 {
+    color: red;
+    text-decoration: none;
+}
+
+.percent
+{
+
+color:red;
+}
